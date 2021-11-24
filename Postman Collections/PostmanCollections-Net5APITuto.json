@@ -1,0 +1,153 @@
+{
+  "info": {
+    "_postman_id": "b1212888-c565-4606-8559-d83e38e756c4",
+    "name": "NET 5 REST API Tutorial",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "AddItem",
+      "_postman_id": "97d53239-993b-49a1-b8bd-633385b98ede",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Docker-Mongo-WithSerilog\",\r\n    \"price\": 10\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "http://salam7:3001/items"
+      },
+      "response": []
+    },
+    {
+      "name": "GetAllItems",
+      "_postman_id": "d9753172-bf76-476a-b6de-6a7e6573e55b",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "https://salam7:3001/items"
+      },
+      "response": []
+    },
+    {
+      "name": "GetOneItem",
+      "_postman_id": "3da5f2a6-af66-414d-8592-e965e45933f7",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "https://salam7:3001/items/6568ec05-40b6-4bfb-a008-e012ecc4b6e3"
+      },
+      "response": []
+    },
+    {
+      "name": "UpdateItem",
+      "_postman_id": "616e007a-4bca-4bbd-a93e-c1c3cd8e3320",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Mega-Potion\",\r\n    \"price\": 145\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://salam7:3001/items/6568ec05-40b6-4bfb-a008-e012ecc4b6e3"
+      },
+      "response": []
+    },
+    {
+      "name": "DeleteItem",
+      "_postman_id": "121e787c-460a-4154-8cdd-8bc70a82bf9e",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": "https://salam7:3001/items/bdc64b63-9b2e-49d1-b945-054c7780296b"
+      },
+      "response": []
+    },
+    {
+      "name": "zHealth",
+      "_postman_id": "ad96de8d-228b-4b64-937d-3cf7ce8f4eb5",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "https://salam7:3001/health/ready"
+      },
+      "response": []
+    },
+    {
+      "name": "HetAllItemsDockerContainer",
+      "_postman_id": "f3c12640-a556-46e8-a021-aab7ee980753",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://salam7:8080/items"
+      },
+      "response": []
+    },
+    {
+      "name": "AddItemDockerContainer",
+      "_postman_id": "0d35f483-3a0c-4343-9181-d77729938995",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Kubernetes-Mongo-DockerApi\",\r\n    \"price\": 200\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "http://salam7:8080/items"
+      },
+      "response": []
+    },
+    {
+      "name": "HetAllItemsContainerKubernetes",
+      "_postman_id": "9ab2a0a0-2887-4a57-ac58-236d42504b62",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://salam7:8080/items"
+      },
+      "response": []
+    }
+  ]
+}
